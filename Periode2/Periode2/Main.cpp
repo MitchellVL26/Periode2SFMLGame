@@ -2,5 +2,5 @@
 
 int main()
 {
-	int Ballen = 5;
+	int Ballen = 6;
 }
