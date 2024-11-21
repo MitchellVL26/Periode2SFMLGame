@@ -76,13 +76,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-graphics.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-graphics-d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -93,7 +93,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -101,7 +101,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-graphics.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -110,13 +110,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-graphics.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-graphics-d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,14 +127,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\mitch\Periode2SFMLGame\Periode2\SFML-2.6.1\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-graphics.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
