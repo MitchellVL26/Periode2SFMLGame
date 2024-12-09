@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "Player.h"
 
 int main()
 {
@@ -7,6 +8,8 @@ int main()
 
     
     window.setFramerateLimit(60);
+
+    Player player(200, 430);
 
     
     sf::RectangleShape greenRectangle(sf::Vector2f(800, 500)); 
@@ -69,7 +72,7 @@ int main()
                 window.close();
         }
 
-        
+        player.update();
 
         window.clear(lightBlue);
 
@@ -86,6 +89,8 @@ int main()
         window.draw(treeFoliage1);
         window.draw(treeTrunk3);
         window.draw(treeFoliage3);
+
+        player.draw(window);
 
         
         window.display();
