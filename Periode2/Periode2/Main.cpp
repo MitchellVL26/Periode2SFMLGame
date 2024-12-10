@@ -1,8 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include "Player.h"
+#include "Ui.h"
 
 int main()
 {
+    if (UI() != 0) {
+        return 1; // Exit if there was an error in the UI
+    }
 
     sf::RenderWindow window(sf::VideoMode(800, 600), "Blue Screen");
 
