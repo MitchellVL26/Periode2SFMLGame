@@ -34,22 +34,22 @@ public:
         head.setPosition(x + .5f, y - 50); 
 
         
-        leftArm.setSize(sf::Vector2f(15, 75)); 
+        leftArm.setSize(sf::Vector2f(10, 60)); 
         leftArm.setFillColor(sf::Color::Yellow);
         leftArm.setPosition(x - 20, y); 
 
         
-        rightArm.setSize(sf::Vector2f(15, 75)); 
+        rightArm.setSize(sf::Vector2f(10, 60)); 
         rightArm.setFillColor(sf::Color::Yellow);
         rightArm.setPosition(x + 55, y); 
 
         
-        leftLeg.setSize(sf::Vector2f(15, 75)); 
+        leftLeg.setSize(sf::Vector2f(10, 60)); 
         leftLeg.setFillColor(sf::Color::Yellow);
         leftLeg.setPosition(x + 5, y + 100); 
 
         
-        rightLeg.setSize(sf::Vector2f(15, 75)); 
+        rightLeg.setSize(sf::Vector2f(10, 60)); 
         rightLeg.setFillColor(sf::Color::Yellow);
         rightLeg.setPosition(x + 30, y + 100); 
     }
@@ -105,12 +105,12 @@ public:
 
     void setPosition(float x, float y)
     {
-        torso.setPosition(x, y);
-        head.setPosition(x + .5f, y - 50);
-        leftArm.setPosition(x - 20, y);
-        rightArm.setPosition(x + 55, y);
-        leftLeg.setPosition(x + 5, y + 100);
-        rightLeg.setPosition(x + 30, y + 100);
+        torso.setPosition(x, y); 
+        head.setPosition(x, y - 50); 
+        leftArm.setPosition(x - 20, y); 
+        rightArm.setPosition(x + 55, y); 
+        leftLeg.setPosition(x + 5, y + 100); 
+        rightLeg.setPosition(x + 30, y + 100); 
     }
 
     void draw(sf::RenderWindow& window)

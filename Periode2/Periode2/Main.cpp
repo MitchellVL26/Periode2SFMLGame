@@ -5,7 +5,7 @@
 int main()
 {
     if (UI() != 0) {
-        return 1; // Exit if there was an error in the UI
+        return 1; 
     }
 
     sf::RenderWindow window(sf::VideoMode(800, 600), "Blue Screen");
@@ -23,9 +23,9 @@ int main()
     sf::Color lightBlue(153, 176, 230);
  
 
-    sf::CircleShape cloud1Part1(50); // Circle with radius 50
+    sf::CircleShape cloud1Part1(50); 
     cloud1Part1.setFillColor(sf::Color::White);
-    cloud1Part1.setPosition(200, 60); // Position on the screen
+    cloud1Part1.setPosition(200, 60); 
 
     sf::CircleShape cloud1Part2(40);
     cloud1Part2.setFillColor(sf::Color::White);
@@ -48,13 +48,13 @@ int main()
     cloud2Part3.setFillColor(sf::Color::White);
     cloud2Part3.setPosition(480, 80);
 
-    sf::RectangleShape treeTrunk1(sf::Vector2f(20, 300)); // Trunk width 20, height 100
-    treeTrunk1.setFillColor(sf::Color(139, 69, 19)); // Brown color for the trunk
-    treeTrunk1.setPosition(110, 400); // Position trunk at the bottom
+    sf::RectangleShape treeTrunk1(sf::Vector2f(20, 300)); 
+    treeTrunk1.setFillColor(sf::Color(139, 69, 19)); 
+    treeTrunk1.setPosition(110, 400); 
 
-    sf::CircleShape treeFoliage1(50); // Foliage with radius 50
+    sf::CircleShape treeFoliage1(50); 
     treeFoliage1.setFillColor(sf::Color(255, 192, 203));
-    treeFoliage1.setPosition(75, 350); // Position foliage above the trunk
+    treeFoliage1.setPosition(75, 350); 
 
 
     sf::RectangleShape treeTrunk3(sf::Vector2f(20, 300));
