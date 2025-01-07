@@ -20,6 +20,10 @@ int main()
     greenRectangle.setFillColor(sf::Color::Green);
     greenRectangle.setPosition(0, 200); 
 
+    sf::RectangleShape groundRectangle(sf::Vector2f(800, 400));
+    groundRectangle.setFillColor(sf::Color::Black);
+    groundRectangle.setPosition(0, 560);
+
     sf::Color lightBlue(153, 176, 230);
  
 
@@ -81,6 +85,7 @@ int main()
         window.clear(lightBlue);
 
         window.draw(greenRectangle);
+        
 
         window.draw(cloud1Part1);
         window.draw(cloud1Part2);
@@ -93,6 +98,7 @@ int main()
         window.draw(treeFoliage1);
         window.draw(treeTrunk3);
         window.draw(treeFoliage3);
+        window.draw(groundRectangle);
 
         player.draw(window);
 
