@@ -1,6 +1,8 @@
 #include <SFML/Graphics.hpp>
 #include "Player.h"
 #include "Ui.h"
+#include "Enemy.h"
+
 
 int main()
 {
@@ -15,7 +17,11 @@ int main()
 
     Player player(200, 430);
 
-    
+    float enemyRadius = 20.0f;
+    Enemy enemy(enemyRadius, 700, 400, 5.0f);
+    Enemy enemy2(enemyRadius, 700, 200, 3.0f);
+    Enemy enemy3(enemyRadius, 700, 100, 4.0f);
+
     sf::RectangleShape greenRectangle(sf::Vector2f(800, 500)); 
     greenRectangle.setFillColor(sf::Color::Green);
     greenRectangle.setPosition(0, 200); 
@@ -61,6 +67,7 @@ int main()
     treeFoliage1.setPosition(75, 350); 
 
 
+
     sf::RectangleShape treeTrunk3(sf::Vector2f(20, 300));
     treeTrunk3.setFillColor(sf::Color(139, 69, 19));
     treeTrunk3.setPosition(510, 400);
@@ -81,11 +88,31 @@ int main()
         }
 
         player.update();
+        enemy.update();
+        enemy2.update();
+        enemy3.update();
+        if (player.getBounds().intersects(enemy.getShape().getGlobalBounds()) ||
+            player.getBounds().intersects(enemy2.getShape().getGlobalBounds()) ||
+            player.getBounds().intersects(enemy3.getShape().getGlobalBounds()))
+        {
+            
+            
+            if (UI() != 0)
+            {
+                return 1;
+            }
+
+            
+            player.reset(200, 430);
+            enemy.reset(700, 400);
+            enemy2.reset(700, 200);
+            enemy3.reset(700, 100);
+        }
 
         window.clear(lightBlue);
 
         window.draw(greenRectangle);
-        
+      
 
         window.draw(cloud1Part1);
         window.draw(cloud1Part2);
@@ -101,6 +128,10 @@ int main()
         window.draw(groundRectangle);
 
         player.draw(window);
+        enemy.draw(window);
+        enemy2.draw(window);
+        enemy3.draw(window);
+
 
         
         window.display();

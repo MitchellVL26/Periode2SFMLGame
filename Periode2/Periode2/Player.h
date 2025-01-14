@@ -17,7 +17,26 @@ private:
     float gravity;
     bool isGrounded;
     sf::Vector2f velocity;
-        
+       
+    void clampPosition()
+    {
+        sf::Vector2f position = torso.getPosition();
+
+  
+        if (position.x < 0)
+            position.x = 0;
+        if (position.x + torso.getSize().x > 800)
+            position.x = 800 - torso.getSize().x;
+
+       
+        if (position.y < 0)
+            position.y = 0;
+        if (position.y + torso.getSize().y > 600)
+            position.y = 600 - torso.getSize().y;
+
+        setPosition(position.x, position.y);
+    }
+
 
 public:
     Player(float x, float y)
@@ -101,6 +120,7 @@ public:
         rightArm.move(dx, dy);
         leftLeg.move(dx, dy);
         rightLeg.move(dx, dy);
+        clampPosition();
     }
 
     void setPosition(float x, float y)
@@ -121,6 +141,17 @@ public:
         window.draw(rightArm);
         window.draw(leftLeg);
         window.draw(rightLeg);
+    }
+
+    sf::FloatRect getBounds() const
+    {
+        return torso.getGlobalBounds();
+    }
+    void reset(float x, float y)
+    {
+        setPosition(x, y);
+        velocity = { 0, 0 };  
+        isGrounded = true;  
     }
 };
 
